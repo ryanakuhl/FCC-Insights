@@ -127,7 +127,7 @@ def eight_k():
                             try:
                                cik = company_name[company_name.find("(")+1:company_name.find(")")]
                                stocks_sent.append(company_name[last25])    
-                               headers = {'Ocp-Apim-Subscription-Key': '4163afad6285411c8ac0c9f37312426d',}
+                               headers = {'Ocp-Apim-Subscription-Key': '###############',}
                                params = urllib.parse.urlencode({})
                                conn = http.client.HTTPSConnection('services.last10k.com')
                                conn.request("GET", "/v1/company/"+cik+"/ticker?%s" % params, "{body}", headers)
